@@ -1,5 +1,6 @@
 package com.example.SERVIDORSURA5.MODELOS;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
@@ -20,6 +21,12 @@ public class Medicamento {
     private String contraIndicaciones;
     private String registro;
     private Boolean tieneCopago;
+
+   //Creando una relación con la clase paciente
+    @ManyToOne //DONDE SEA MUCHOS SE PONE LA FK
+    @JoinColumn(name = "fk_paciente_Med", referencedColumnName = "id")
+    @JsonBackReference
+    private Paciente paciente;
 
     public Medicamento() {
     }

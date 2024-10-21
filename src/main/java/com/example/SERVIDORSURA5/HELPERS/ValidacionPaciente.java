@@ -6,7 +6,7 @@ import java.time.LocalDate;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class ValidacionPaciente {
+/*public class ValidacionPaciente {
     private Paciente paciente = new Paciente();
 
     public boolean validarNombre(String nombre){
@@ -21,6 +21,7 @@ public class ValidacionPaciente {
     }
 
     public boolean validaranioNacimiento(LocalDate anioNacimiento){
+        return true;
     }
 
     public boolean validarCiudad(String ciudad){
@@ -57,11 +58,15 @@ public class ValidacionPaciente {
     }
 
     public boolean validarIps(String ips){
+        return true;
     }
 
     public boolean validarGrupoIngresos(String grupoIngresos){
+        return true;
     }
 
     public boolean validarFechaAfiliacion(LocalDate fechaAfiliacion){
+        return true;
     }
 }
+*/
